@@ -8,7 +8,7 @@
 }
 
 .homepage-container {
-	padding-top: 25px;
+	padding-top: 8rem;
 }
 
 .homepage-first-area {
@@ -25,10 +25,12 @@
 
 .homepage-title {
 	width: 85% !important;
+	white-space: nowrap;
 }
 
 .homepage-subtitle {
-	width: 85% !important;
+	margin-top: 1rem;
+	font-size: larger;
 }
 
 .homepage-first-area-right-side {
@@ -37,14 +39,12 @@
 }
 
 .homepage-image-container {
-	width: 370px;
-	height: 370px;
+	width: 30rem;
 }
 
 .homepage-image-wrapper {
 	overflow: hidden;
 	border-radius: 10%;
-	transform: rotate(3deg);
 }
 
 .homepage-image-wrapper img {
