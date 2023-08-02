@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import Project from "./project";
 
@@ -8,18 +8,22 @@ import "./styles/allProjects.css";
 
 const AllProjects = () => {
 	return (
-		<div className="all-projects-container">
-			{INFO.projects.map((project, index) => (
-				<div className="all-projects-project" key={index}>
-					<Project
-						title={project.title}
-						description={project.description}
-						linkText={project.linkText}
-						link={project.link}
-					/>
-				</div>
-			))}
-		</div>
+		<>
+			<div className="all-projects-title">Other Projects</div>
+			<div className="all-projects-container">
+				{INFO.projects.map((project, index) => (
+					<div className="all-projects-project" key={index}>
+						<Project
+							title={project.title}
+							description={project.description}
+							linkText={project.linkText}
+							link={project.link}
+						/>
+					</div>
+				))}
+			</div>
+		</>
+		
 	);
 };
 

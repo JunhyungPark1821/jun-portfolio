@@ -1,32 +1,29 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
 
-import "./styles/project.css";
+import INFO from "../../data/user";
 
-const Project = (props) => {
-	const { title, description, linkText, link } = props;
+import "./styles/featuredProject.css";
+
+const FeaturedProject = () => {
+	const title = INFO.featuredProject.title;
+	const description = INFO.featuredProject.description;
+	const image = INFO.featuredProject.image;
 
 	return (
 		<React.Fragment>
-			<div className="project">
-				<Link to={link}>
-					<div className="project-container">
-						<div className="project-title">{title}</div>
-						<div className="project-description">{description}</div>
-						<div className="project-link">
-							<div className="project-link-icon">
-								<FontAwesomeIcon icon={faLink} />
-							</div>
-
-							<div className="project-link-text">{linkText}</div>
-						</div>
-					</div>
-				</Link>
+			<div className="featuredProject">
+				<div className="featuredProject-title">{title}</div>
+				<div className="featuredProject-image-wrapper">
+					<img
+						src= {image}
+						alt="featured project"
+						className="featuredProject-image"
+					/>
+				</div>
+				<div className="featuredProject-description">{description}</div>
 			</div>
 		</React.Fragment>
 	);
 };
 
-export default Project;
+export default FeaturedProject;

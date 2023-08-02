@@ -2,7 +2,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
-	padding-top: 30px;
 	padding-bottom: 30px;
 	margin-left: -35px;
 	margin-right: -35px;
@@ -13,6 +12,16 @@
 	box-sizing: border-box;
 	padding: 10px;
 	overflow: hidden;
+}
+
+.all-projects-title {
+	color: var(--primary-color);
+    font-family: var(--secondary-font);
+    font-size: 25px;
+    font-weight: 700;
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 @media (max-width: 600px) {

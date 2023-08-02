@@ -13,6 +13,7 @@ import NavBar from "../components/common/navBar";
 import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
+import FeaturedProject from "../components/projects/featuredProject";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -84,7 +85,7 @@ const Homepage = () => {
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src="junhyung_park.jpg"
+											src="./junhyung_park.jpg"
 											alt="profile"
 											className="homepage-image"
 										/>
@@ -94,7 +95,7 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-featured-project">
-							
+							<FeaturedProject />
 						</div>
 
 

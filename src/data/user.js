@@ -27,6 +27,13 @@ const INFO = {
 			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
 	},
 
+	featuredProject: {
+		title: "Featured Project",
+		description: 
+			"This is desription",
+		image: "./junhyung_park.jpg",
+	},
+
 	projects: [
 		{
 			title: "Project 1",
