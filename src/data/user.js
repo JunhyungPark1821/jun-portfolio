@@ -31,7 +31,7 @@ const INFO = {
 		title: "Featured Project",
 		description: 
 			"This is desription",
-		image: "./junhyung_park.jpg",
+		image: "/jun-portfolio/junhyung_park.jpg",
 	},
 
 	projects: [

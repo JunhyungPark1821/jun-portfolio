@@ -85,7 +85,7 @@ const Homepage = () => {
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src="./junhyung_park.jpg"
+											src="/jun-portfolio/junhyung_park.jpg"
 											alt="profile"
 											className="homepage-image"
 										/>
